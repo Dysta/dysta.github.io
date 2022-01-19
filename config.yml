@@ -47,7 +47,7 @@ params:
         - name: github
           url: "https://github.com/Dysta"
         - name: discord
-          url: "Dysta#0571 "
+          url: "Dysta#0571"
 
     fuseOpts:
         isCaseSensitive: false
