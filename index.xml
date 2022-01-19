@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dysta&#39;s Code Chamber</title>
+    <link>https://dysta.github.io/</link>
+    <description>Recent content on Dysta&#39;s Code Chamber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 19 Jan 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://dysta.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Un nouveau blog pour une nouvelle vie</title>
+      <link>https://dysta.github.io/posts/nouveau-blog/</link>
+      <pubDate>Wed, 19 Jan 2022 12:00:00 +0100</pubDate>
+      
+      <guid>https://dysta.github.io/posts/nouveau-blog/</guid>
+      <description>Bonjour à tous ! Pour ce second post sur mon blog, je vais vous parler de mon nouveau blog ! Propulsé par Hugo !</description>
+    </item>
+    
+    <item>
+      <title>Une API pour RPG Paradize ?</title>
+      <link>https://dysta.github.io/posts/api-rpg-paradize/</link>
+      <pubDate>Wed, 10 Feb 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://dysta.github.io/posts/api-rpg-paradize/</guid>
+      <description>Bonjour à tous ! Pour ce premier post sur mon blog j&amp;rsquo;aimerais vous partager un petit bout de code que j&amp;rsquo;avais fais il y a un moment.
+Certains d&amp;rsquo;entre-vous l&amp;rsquo;ont utilisés, mais pas tous. Il est également inclus dans mon CMS privé afin de récupérer des statistiques sur RPG.
+Ce petit bout de code permet de parser une page RPG afin de récupérer ses infos comme :
+ valeur out le nom le nombre de vote la position le graphe RPG  Voici le code de ce petit script, écrit en PHP mais facilement transcriptable dans d&amp;rsquo;autre langage :</description>
+    </item>
+    
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://dysta.github.io/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dysta.github.io/cv/</guid>
+      <description>cv</description>
+    </item>
+    
+    
+  </channel>
+</rss>
