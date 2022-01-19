@@ -1,0 +1,85 @@
+languageCode: fr-fr
+baseURL: https://dysta.github.io/
+title: Dysta's Code Chamber
+theme: "PaperMod"
+paginate: 5
+enableEmoji: true
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Dysta's Code Chamber
+    description: "Dysta's personnal blog."
+    keywords: [Blog, Portfolio, PaperMod]
+    author: Dysta
+    # author: ["Me", "You"] # multiple authors
+    DateFormat: "January 2, 2006"
+    defaultTheme: dark # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: true
+    tocopen: true
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Salut \U0001F44B"
+        Content: "Je suis **Dysta**, jeune passionné d'informatique depuis plusieurs années.\n\n
+
+                    Je suis développeur logiciels, diplomé d'un **master**.\n\n
+
+                    Ce que vous trouverez ici ? Un peu tout comme mon CV, des articles sur des techno, des projet que je suis actuellement en train de mettre en place. En bref, vous êtes dans mon espace personnel ! 😎\n\n
+                "
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/Dysta"
+        - name: discord
+          url: "Dysta#0571"
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+menu:
+    main:
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 10
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 20
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 30
+        # - identifier: example
+        #   name: example.org
+        #   url: https://example.org
+        #   weight: 40
+
+# search
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
