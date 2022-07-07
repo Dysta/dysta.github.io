@@ -1,0 +1,31 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+  </header>
+  {{- $isHidden := .Params.cover.hidden | default .Site.Params.cover.hiddenInSingle | default .Site.Params.cover.hidden }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- if .Content }}
+  <hr />
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  {{- end }}
+
+  
+  {{- if .Params.tags }}
+  <ul class="terms-tags">
+    {{- range ($.GetTerms "tags") }}
+    <li>
+        <a>{{ .LinkTitle }}</a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

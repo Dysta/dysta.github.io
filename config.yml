@@ -60,22 +60,22 @@ params:
 
 menu:
     main:
-        - identifier: archives
-          name: Archives
-          url: /archives/
+        - identifier: CV
+          name: Curriculum Vitae
+          url: /cv/
           weight: 10
-        - identifier: categories
-          name: Categories
-          url: /categories/
-          weight: 20
         - identifier: search
           name: Search
           url: /search/
+          weight: 20
+        - identifier: archives
+          name: Archives
+          url: /archives/
           weight: 30
-        # - identifier: example
-        #   name: example.org
-        #   url: https://example.org
-        #   weight: 40
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 40
 
 # search
 outputs:
