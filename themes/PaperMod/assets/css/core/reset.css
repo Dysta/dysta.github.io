@@ -85,6 +85,10 @@ table {
     word-break: keep-all;
 }
 
+table th {
+    width: 100%;
+}
+
 button,
 input,
 textarea {
