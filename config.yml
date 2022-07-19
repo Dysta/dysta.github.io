@@ -36,7 +36,7 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "Salut \U0001F44B"
-        Content: "Je suis **Dysta**, jeune passionné d'informatique depuis plusieurs années.\n\n
+        Content: "Je suis passionné d'informatique depuis plusieurs années.\n\n
 
                     Je suis développeur logiciels, diplomé d'un **master**.\n\n
 
@@ -47,7 +47,7 @@ params:
         - name: github
           url: "https://github.com/Dysta"
         - name: discord
-          url: "Dysta#0571"
+          url: "https://discord.com/users/845189167914549288"
 
     fuseOpts:
         isCaseSensitive: false
