@@ -27,7 +27,7 @@ tags:
 ___
 
 ### &bull; OVHCloud, Bordeaux, France
-#### Développeur Go/AngularJS/Perl -- Mai 2022 → Maintenant
+#### Développeur Go/AngularJS/Perl -- Mai 2022 → Mars 2023
 Développement et maintenance des outils interne d'OVHCloud. Prise de contacte avec les clients afin d'identifier leurs besoins.
 
 ### &bull; ThermoFisher Scientific, Bordeaux, France
