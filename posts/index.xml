@@ -6,16 +6,7 @@
     <description>Recent content in Posts on Dysta&#39;s Code Chamber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 19 Jan 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://dysta.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Un nouveau blog pour une nouvelle vie</title>
-      <link>https://dysta.github.io/posts/nouveau-blog/</link>
-      <pubDate>Wed, 19 Jan 2022 12:00:00 +0100</pubDate>
-      
-      <guid>https://dysta.github.io/posts/nouveau-blog/</guid>
-      <description>Bonjour à tous ! Pour ce second post sur mon blog, je vais vous parler de mon nouveau blog ! Propulsé par Hugo !</description>
-    </item>
-    
+    <lastBuildDate>Wed, 10 Feb 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://dysta.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Une API pour RPG Paradize ?</title>
       <link>https://dysta.github.io/posts/api-rpg-paradize/</link>
