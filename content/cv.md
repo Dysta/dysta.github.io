@@ -26,6 +26,10 @@ tags:
 # Expériences Professionnelles
 ___
 
+### &bull; Benebono, Paris, France
+#### Développeur Backend Go -- Mai 2023 → Maintenant
+Développement et maintenance des APIs de Benebono.
+
 ### &bull; OVHCloud, Bordeaux, France
 #### Développeur Go/AngularJS/Perl -- Mai 2022 → Mars 2023
 Développement et maintenance des outils interne d'OVHCloud. Prise de contacte avec les clients afin d'identifier leurs besoins.
