@@ -32,7 +32,7 @@ Développement et maintenance des APIs de Benebono.
 
 ### &bull; OVHCloud, Bordeaux, France
 #### Développeur Go/AngularJS/Perl -- Mai 2022 → Mars 2023
-Développement et maintenance des outils interne d'OVHCloud. Prise de contacte avec les clients afin d'identifier leurs besoins.
+Développement et maintenance des outils internes d'OVHCloud. Prise de contact avec les clients afin d'identifier leurs besoins.
 
 ### &bull; ThermoFisher Scientific, Bordeaux, France
 #### Stagiaire développeur Python/Cython/C++ -- Avril 2021 → Aout 2021
