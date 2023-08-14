@@ -4,9 +4,9 @@ date:   2021-02-10T12:00:00+01:00
 categories: "dev"
 ---
 # Présentation
-Bonjour à tous ! Pour ce premier post sur mon blog j'aimerais vous partager un petit bout de code que j'avais fais il y a un moment.
+Bonjour à tous ! Pour ce premier post sur mon blog j'aimerais vous partager un petit bout de code que j'avais fait il y a un moment.
 
-Certains d'entre-vous l'ont utilisés, mais pas tous. Il est également inclus dans mon CMS privé [*PantyCMS*](https://github.com/Dysta/Panty) afin de récupérer des statistiques sur RPG.
+Certains d'entre vous l'ont utilisé, mais pas tous. Il est également inclus dans mon CMS privé [*PantyCMS*](https://github.com/Dysta/Panty) afin de récupérer des statistiques sur RPG.
 
 Ce petit bout de code permet de **parser** une page RPG afin de récupérer les infos suivantes :
 - valeur out
@@ -247,7 +247,7 @@ class RpgApi {
 ?>
 ```
 ## Explication du code
-Ce code envoi une requête `curl` en destination de la page RPG souhaité afin de récupérer l'ensemble du code HTML brute.
+Ce code envoie une requête `curl` en destination de la page RPG souhaité afin de récupérer l'ensemble du code HTML brut.
 
 Les différentes fonctions `get*()` appliquent une *RegEx* sur le code HTML afin de récuperer la valeur correspondante au nom de la fonction.
 
@@ -256,7 +256,7 @@ Egalement, 2 fonctions sont disponibles afin d'extraire l'ensemble des valeurs e
 # Le graphe
 Comme dit plus haut, ce petit script permet de récupérer le graphe RPG. Enfin.. il ne récupère pas le graphe en lui-même sinon ça serait beaucoup trop compliqué. Non ! Il récupère simplement les données servant à construire le graphe sur RPG, à savoir, la date d'un jour et le nombre de vote correspondant à ce jour. De cette manière, vous êtes libres d'utiliser n'importe quelle bibliothèque de votre choix afin de construire le graphe comme bon vous sembles.
 
-En effet, *RPG Paradize* utilise la bibliothèque [Char.js](https://www.chartjs.org/) pour générer ses graphes. Le fait de récupérer seulement les données nous permet de manipuler une autre bibliothèque afin de construire le graphe. Dans le screen ci-dessous, j'ai utilisé la bibliothèque [Morris.js](https://morrisjs.github.io/morris.js/) afin d'inclure le graphe RPG dans un panel admin..
+En effet, *RPG Paradize* utilise la bibliothèque [Char.js](https://www.chartjs.org/) pour générer ses graphes. Le fait de récupérer seulement les données nous permet d'utiliser une autre bibliothèque pour construire le graphe. Dans le screen ci-dessous, j'ai utilisé la bibliothèque [Morris.js](https://morrisjs.github.io/morris.js/) afin d'inclure le graphe RPG dans un panel admin..
 
 
 | ![PCA](https://cdn.discordapp.com/attachments/573225654452092930/809038148763910184/unknown.png "Panel admin utilisant Morris.js pour générer le graphe") |
@@ -273,5 +273,4 @@ Des exemples d'utilisation de ce petit bout de code sont disponibles sur le [rep
 
 ---
 
-En espérant que ce petit billet vous aura plu. 
-Dans un prochain billet, je vous montrerais comment faire un système de vote par valeur out en utilisant l'API !
+J'espère que ce court article vous a plu. Dans un prochain billet, je vous montrerai comment mettre en place un système de vote par valeur en utilisant l'API !
