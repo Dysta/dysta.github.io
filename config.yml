@@ -15,6 +15,7 @@ params:
     description: "Dysta's personnal blog."
     keywords: [Blog, Portfolio, PaperMod]
     author: Dysta
+    discordInvitCode: "3u3HyEsMah"
     # author: ["Me", "You"] # multiple authors
     DateFormat: "January 2, 2006"
     defaultTheme: dark # dark, light
