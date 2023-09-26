@@ -28,6 +28,15 @@ Ce petit bout de code permet de parser une page RPG afin de récupérer les info
       <description>cv</description>
     </item>
     
+    <item>
+      <title>Redirection...</title>
+      <link>https://dysta.github.io/discord/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dysta.github.io/discord/</guid>
+      <description>discord</description>
+    </item>
+    
     
   </channel>
 </rss>
