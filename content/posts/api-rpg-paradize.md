@@ -25,7 +25,7 @@ Cependant, il est facilement convertissable dans un autre langage comme Python o
 J'ai conscience que le code n'est pas des plus PHPiste qui existe étant donné mon niveau relativement basique dans le langage. Le code est donc prompt a diverses optimisation.
 
 ## Initialisation
-```PHP
+```PHP {linenos=true}
 <?php
 class RpgApi {
     public function __construct($id) {
@@ -40,13 +40,13 @@ Notez également que tout ce qui se situe entre le `site-` et `-101961` est inut
 Ainsi, l'url [https://www.rpg-paradize.com/site--101961](https://www.rpg-paradize.com/site--101961) est valide !
 
 Nous pouvons donc initialiser notre api de cette façon :
-```PHP
+```PHP {linenos=true}
 $RPG = new RpgApi(101961);
 ```
 
 ## Récupérer le nombre de vote
 Lorsque notre objet RpgApi est initialisé, il nous permet de récupérer de manière très simple le nombre de vote grace à la fonction publique `getVote()`.
-```PHP
+```PHP {linenos=true}
  /**
  * Return RPG vote
  * @return int vote number
@@ -63,7 +63,7 @@ public function getVote() {
 ```
 Cette méthode est en plusieurs temps. Elle va d'abord récupérer le HTML de la page grâce à la fonction privé `getWebContent()` pour ensuite *parser* le nombre de vote via la fonction `parseVote()`. \
 La méthode qui permet de parser le nombre de vote n'est pas très compliqué. Elle repose sur une simple regEx qu'on applique sur le HTML récupéré.
-```PHP
+```PHP {linenos=true}
 private function parseVote() {
     preg_match('/Vote : (.*?)<\/a>/', $this->webContent, $vote);
     $this->votes = $vote[1];
@@ -73,7 +73,7 @@ Le principe est similaire pour les autres méthodes à l'exception de `parseGrap
 
 Nous pouvons donc ajouter à notre petit bout de code d'exemple le nombre de vote !
 
-```PHP
+```PHP {linenos=true}
 $RPG = new RpgApi(101961);
 
 $vote = $RPG->getVote();
@@ -83,7 +83,7 @@ Ici le nombre de vote est affiché dans une balise paragraphe. Pour récupérer 
 
 ## Récuperation du code HTML
 Comme dit précédemment, le code HTML est récupéré via la fonction `getWebContent()`. Cette fonction est appelée en interne et utilise le module PHP `curl`.
-```PHP
+```PHP {linenos=true}
 private function getWebContent() {
     $opts = array(
         CURLOPT_URL             => 'http://rpg-paradize.com/site--' . $this->id,
@@ -102,7 +102,7 @@ Je commence par initialiser un tableau avec tous mes paramètres CURL. Le nom de
 On continue en définissant un header et des user-agents afin que notre requête soit le moins suspecte possible. Puis on initialise notre objet curl en lui donnant les paramètres et en envoyant la requête.
 
 Notez que dans chaque fonction `get*()`, un *if* est effectué sur le contenu du HTML afin de ne le récupérer qu'une seule fois et non à chaque fois que nous voulons récupérer une info comme ici sur `getName()` qui possède une structure similaire à `getVote()`.
-```PHP
+```PHP {linenos=true}
 /**
  * * Return RPG name
  * @return string name
@@ -119,7 +119,7 @@ public function getName() {
 ```
 Si vous voulez donc rafraîchir les données contenu dans votre objet rpg, vous devez le recréer. Notez qu'une fonction permettant de rafraîchir le contenu n'est pas réellement nécessaire vu que le site met à jour les données que toutes les 3 heures environs.
 Cependant, cela reste possible de cette manière :
-```PHP
+```PHP {linenos=true}
 $RPG = new RpgApi(101961);
 
 $vote = $RPG->getVote();
@@ -150,7 +150,7 @@ En effet, *RPG Paradize* utilise la bibliothèque [Char.js](https://www.chartjs.
 
 ## Récupération des infos
 La récupération des infos du graphe se fait dans la fonction `parseGraph()`. Cette fonction construit un tableau de la forme suivante :
-```PHP
+```PHP {linenos=true}
 [
     "key_id" = {
         "date": "YYYY-MM-DD",
@@ -169,7 +169,7 @@ La récupération des infos du graphe se fait dans la fonction `parseGraph()`. C
 ```
 
 Dans un premier temps, je fais comme les autres méthodes. j'applique une regEx sur le contenu HTML afin d'extraire une énorme string contenant les labels (les dates) et la data (les votes) puis je crée un tableau en séparant la string via les virgules entre chaque donnée.
-```PHP
+```PHP {linenos=true}
 preg_match('/labels : \[(.*?)\]/',$this->webContent, $label);
 preg_match('/data : \[(.*?)\]/', $this->webContent, $data);
 $array_label = explode(",", $label[1]);
@@ -177,13 +177,13 @@ $array_data = explode(",", $data[1]);
 ```
 
 Dans le tableau des dates, chaque date est entouré de double quote. Il faut les enlever.
-```PHP
+```PHP {linenos=true}
 foreach($array_label as $k => $v)
     $array_label[$k] = substr($v, 1, -1);
 ```
 
 Je peux ensuite crée le tableau final qui contient la donnée des labels nettoyé en lui associant le bon nombre de vote
-```PHP
+```PHP {linenos=true}
 $this->graph = array();
 foreach ($array_label as $k => $v) {
     $this->graph[$k]['date'] = $array_label[$k];
@@ -191,7 +191,7 @@ foreach ($array_label as $k => $v) {
 }
 ```
 C'est ce tableau qui sera retourné à l'utilisateur lorsqu'il appellera la fonction `getGraph()`.
-```PHP
+```PHP {linenos=true}
 /**
  * Return RPG graph data
  * @return array RPG graph data as array('date', 'votes')
