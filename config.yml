@@ -47,6 +47,8 @@ params:
     socialIcons:
         - name: github
           url: "https://github.com/Dysta"
+        - name: kofi
+          url: "https://ko-fi.com/dysta"
         - name: discord
           url: "https://discord.com/users/845189167914549288"
 
