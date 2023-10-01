@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Dysta&#39;s Lair</title>
-    <link>https://dysta.github.io/posts/</link>
-    <description>Recent content in Posts on Dysta&#39;s Lair</description>
+    <title>life on Dysta&#39;s Lair</title>
+    <link>https://dysta.github.io/categories/life/</link>
+    <description>Recent content in life on Dysta&#39;s Lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Mon, 10 Apr 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://dysta.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://dysta.github.io/categories/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ma première expérience professionnel</title>
       <link>https://dysta.github.io/posts/premiere-exp-pro/</link>
@@ -15,17 +15,6 @@
       <guid>https://dysta.github.io/posts/premiere-exp-pro/</guid>
       <description>Mon aventure en stage de fin d&amp;rsquo;étude : quand la facilité n&amp;rsquo;est pas toujours le meilleur choix Note : Ce billet de blog relate une expérience personnelle basée sur un stage qui s&amp;rsquo;est déroulé il y a quelques années de ça.
 Lorsqu&amp;rsquo;on effectue un stage de fin d&amp;rsquo;étude, on espère généralement vivre une expérience enrichissante qui nous permettra de mettre en pratique les connaissances acquises au fil des années passées à l&amp;rsquo;université.</description>
-    </item>
-    
-    <item>
-      <title>Une API pour RPG Paradize ?</title>
-      <link>https://dysta.github.io/posts/api-rpg-paradize/</link>
-      <pubDate>Wed, 10 Feb 2021 12:00:00 +0100</pubDate>
-      
-      <guid>https://dysta.github.io/posts/api-rpg-paradize/</guid>
-      <description>Mise en contexte Bonjour à tous ! Pour ce premier post sur mon blog j&amp;rsquo;aimerais vous partager un petit bout de code que j&amp;rsquo;avais fait il y a un moment.
-Certains d&amp;rsquo;entre vous l&amp;rsquo;ont utilisé, mais pas tous. Il est également inclus dans mon CMS privé PantyCMS afin de récupérer des statistiques sur RPG.
-Ce petit bout de code permet de parser une page RPG afin de récupérer les infos suivantes :</description>
     </item>
     
   </channel>
