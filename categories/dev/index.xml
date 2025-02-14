@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>dev on Dysta&#39;s Lair</title>
+    <title>Dev on Dysta&#39;s Lair</title>
     <link>https://dysta.github.io/categories/dev/</link>
-    <description>Recent content in dev on Dysta&#39;s Lair</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Dev on Dysta&#39;s Lair</description>
+    <generator>Hugo -- 0.143.1</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 10 Feb 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://dysta.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Feb 2021 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://dysta.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Une API pour RPG Paradize ?</title>
       <link>https://dysta.github.io/posts/api-rpg-paradize/</link>
       <pubDate>Wed, 10 Feb 2021 12:00:00 +0100</pubDate>
-      
       <guid>https://dysta.github.io/posts/api-rpg-paradize/</guid>
-      <description>Mise en contexte Bonjour à tous ! Pour ce premier post sur mon blog j&amp;rsquo;aimerais vous partager un petit bout de code que j&amp;rsquo;avais fait il y a un moment.
-Certains d&amp;rsquo;entre vous l&amp;rsquo;ont utilisé, mais pas tous. Il est également inclus dans mon CMS privé PantyCMS afin de récupérer des statistiques sur RPG.
-Ce petit bout de code permet de parser une page RPG afin de récupérer les infos suivantes :</description>
+      <description>&lt;h1 id=&#34;mise-en-contexte&#34;&gt;Mise en contexte&lt;/h1&gt;
+&lt;p&gt;Bonjour à tous ! Pour ce premier post sur mon blog j&amp;rsquo;aimerais vous partager un petit bout de code que j&amp;rsquo;avais fait il y a un moment.&lt;/p&gt;
+&lt;p&gt;Certains d&amp;rsquo;entre vous l&amp;rsquo;ont utilisé, mais pas tous. Il est également inclus dans mon CMS privé &lt;a href=&#34;https://github.com/Dysta/Panty&#34;&gt;&lt;em&gt;PantyCMS&lt;/em&gt;&lt;/a&gt; afin de récupérer des statistiques sur RPG.&lt;/p&gt;
+&lt;p&gt;Ce petit bout de code permet de &lt;strong&gt;parser&lt;/strong&gt; une page RPG afin de récupérer les infos suivantes :&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

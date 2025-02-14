@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Développement agile on Dysta&#39;s Lair</title>
+    <title>Développement Agile on Dysta&#39;s Lair</title>
     <link>https://dysta.github.io/tags/d%C3%A9veloppement-agile/</link>
-    <description>Recent content in Développement agile on Dysta&#39;s Lair</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr-fr</language><atom:link href="https://dysta.github.io/tags/d%C3%A9veloppement-agile/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Développement Agile on Dysta&#39;s Lair</description>
+    <generator>Hugo -- 0.143.1</generator>
+    <language>fr-fr</language>
+    <atom:link href="https://dysta.github.io/tags/d%C3%A9veloppement-agile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curriculum Vitae</title>
       <link>https://dysta.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://dysta.github.io/cv/</guid>
       <description>cv</description>
     </item>
-    
   </channel>
 </rss>
