@@ -22,13 +22,14 @@ tags:
     - OpenCV
     - OpenMP
     - Qt
+    - Docker
 ---
 # Expériences Professionnelles
 ___
 
 ### &bull; Benebono, Paris, France
-#### Développeur Backend Go -- Mai 2023 → Maintenant
-Développement et maintenance des APIs de Benebono.
+#### Développeur Backend Go -- Mai 2023 → Janvier 2025
+Développement et maintenance des APIs de Benebono. Système de notification pour les clients en temps réel. 
 
 ### &bull; OVHCloud, Bordeaux, France
 #### Développeur Go/AngularJS/Perl -- Mai 2022 → Mars 2023
@@ -43,15 +44,15 @@ ___
 
 ### &bull; Master Informatique, Bordeaux, France
 #### Cursus génie logiciel -- Septembre 2019 → Aout 2021
-TODO
+
 
 ### &bull; Licence Informatique, Bordeaux, France
 #### Coloration informatique -- Septembre 2016 → Aout 2019
-TODO
+
 
 ### &bull; Lycée de Borda, Dax, France
 #### Bac STI2D -- Septembre 2013 → Aout 2016
-TODO
+
 
 # Compétences
 
