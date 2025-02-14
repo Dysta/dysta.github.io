@@ -34,7 +34,7 @@
     </item>
     
     <item>
-      <title>Développement Agile</title>
+      <title>Développement agile</title>
       <link>https://dysta.github.io/tags/d%C3%A9veloppement-agile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -48,6 +48,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dysta.github.io/tags/discord.py/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://dysta.github.io/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dysta.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
