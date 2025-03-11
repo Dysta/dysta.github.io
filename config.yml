@@ -2,7 +2,7 @@ languageCode: fr-fr
 baseURL: https://dysta.github.io/
 title: Dysta's Lair
 theme: "PaperMod"
-paginate: 5
+# paginate: 5
 enableEmoji: true
 
 minify:
