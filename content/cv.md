@@ -29,15 +29,22 @@ ___
 
 ### &bull; Benebono, Paris, France
 #### Développeur Backend Go -- Mai 2023 → Janvier 2025
-Développement et maintenance des APIs de Benebono. Système de notification pour les clients en temps réel. 
+- Développement et maintenance d’une API REST pour une plateforme d’e-commerce alimentaire, servant 35 000 utilisateurs/mois
+- Développement d'outils de monitoring et diagnostics
+- Système de notifications pour 15 000 utilisateurs hebdomadaire
+- Conception d'un extracteur de donnée en Python pour la data analyse
 
 ### &bull; OVHCloud, Bordeaux, France
 #### Développeur Go/AngularJS/Perl -- Mai 2022 → Mars 2023
-Développement et maintenance des outils internes d'OVHCloud. Prise de contact avec les clients afin d'identifier leurs besoins.
+- Développement et maintenance des logiciels internes servant à l'analyse et à la mise à jour du parc informatique
+- Migration de code legacy de Perl à Golang
+- Gestion de Kanban et suivi des tickets
+- Recueil et traduction des exigences métiers en spécifications techniques pour l'équipe de développement
 
 ### &bull; ThermoFisher Scientific, Bordeaux, France
 #### Stagiaire développeur Python/Cython/C++ -- Avril 2021 → Aout 2021
-Développement d'une API en Python pour le client permettant l'intéraction direct avec la GUI du logiciel Avizo/Amira.
+- Développement d'une API en Python/Cython pour étendre les fonctionnalités d'Avizo-Amira, permettant aux utilisateurs d'automatiser leurs workflows scientifiques
+- Migration de fonctionnalités de C++ vers Python
 
 # Scolarité
 ___
