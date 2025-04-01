@@ -6,8 +6,25 @@
     <description>Recent content in Posts on Dysta&#39;s Lair</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 11 Mar 2025 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 30 Mar 2025 12:00:00 +0100</lastBuildDate>
     <atom:link href="https://dysta.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Une API REST statique gratuitement</title>
+      <link>https://dysta.github.io/posts/serverless-rest-api/</link>
+      <pubDate>Sun, 30 Mar 2025 12:00:00 +0100</pubDate>
+      <guid>https://dysta.github.io/posts/serverless-rest-api/</guid>
+      <description>&lt;h1 id=&#34;une-api-rest-statique--définition-cas-dusage-et-mise-en-place&#34;&gt;Une API REST statique : définition, cas d’usage et mise en place&lt;/h1&gt;
+&lt;p&gt;Aujourd’hui, je vais vous présenter une façon simple et gratuite de concevoir une API REST statique, hébergée via un simple repository GitHub.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;quest-ce-quune-api-rest-statique-&#34;&gt;Qu&amp;rsquo;est-ce qu&amp;rsquo;une API REST statique ?&lt;/h2&gt;
+&lt;p&gt;Je définis une API REST statique comme une API qui respecte trois principes fondamentaux :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Serverless&lt;/strong&gt; : elle ne dépend d’aucun cloud provider (AWS, GCP, Azure, etc..).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stateless&lt;/strong&gt; : elle ne conserve aucun état entre les requêtes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalable&lt;/strong&gt; : elle peut être mise à l’échelle facilement, sans contrainte d’infrastructure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En pratique, il s&amp;rsquo;agit d&amp;rsquo;une API qui expose des données sous forme de fichiers JSON statiques, accessibles via des requêtes HTTP, sans traitement côté serveur. Autrement dit, elle est &lt;strong&gt;entièrement en lecture seule&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mes premières années dans une boite</title>
       <link>https://dysta.github.io/posts/years-update/</link>
