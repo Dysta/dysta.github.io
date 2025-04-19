@@ -95,6 +95,10 @@ menu:
           name: Curriculum Vitae
           url: /cv/
           weight: 50
+        - identifier: Discord
+          name: Discord
+          url: /discord/
+          weight: 60
 
 # search
 outputs:
