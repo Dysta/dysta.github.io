@@ -8,129 +8,66 @@
     <language>fr-fr</language>
     <atom:link href="https://dysta.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Asyncio</title>
-      <link>https://dysta.github.io/tags/asyncio/</link>
+      <title>Animé</title>
+      <link>https://dysta.github.io/tags/anim%C3%A9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/asyncio/</guid>
+      <guid>https://dysta.github.io/tags/anim%C3%A9/</guid>
       <description></description>
     </item>
     <item>
-      <title>BeautifulSoup</title>
-      <link>https://dysta.github.io/tags/beautifulsoup/</link>
+      <title>Escalade</title>
+      <link>https://dysta.github.io/tags/escalade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/beautifulsoup/</guid>
+      <guid>https://dysta.github.io/tags/escalade/</guid>
       <description></description>
     </item>
     <item>
-      <title>Débuggage</title>
-      <link>https://dysta.github.io/tags/d%C3%A9buggage/</link>
+      <title>Homelab</title>
+      <link>https://dysta.github.io/tags/homelab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/d%C3%A9buggage/</guid>
+      <guid>https://dysta.github.io/tags/homelab/</guid>
       <description></description>
     </item>
     <item>
-      <title>Développement Agile</title>
-      <link>https://dysta.github.io/tags/d%C3%A9veloppement-agile/</link>
+      <title>Jeux Vidéo</title>
+      <link>https://dysta.github.io/tags/jeux-vid%C3%A9o/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/d%C3%A9veloppement-agile/</guid>
+      <guid>https://dysta.github.io/tags/jeux-vid%C3%A9o/</guid>
       <description></description>
     </item>
     <item>
-      <title>Discord.py</title>
-      <link>https://dysta.github.io/tags/discord.py/</link>
+      <title>Manga</title>
+      <link>https://dysta.github.io/tags/manga/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/discord.py/</guid>
+      <guid>https://dysta.github.io/tags/manga/</guid>
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>https://dysta.github.io/tags/docker/</link>
+      <title>Selfhost</title>
+      <link>https://dysta.github.io/tags/selfhost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/docker/</guid>
+      <guid>https://dysta.github.io/tags/selfhost/</guid>
       <description></description>
     </item>
     <item>
-      <title>Git</title>
-      <link>https://dysta.github.io/tags/git/</link>
+      <title>Sport</title>
+      <link>https://dysta.github.io/tags/sport/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/git/</guid>
+      <guid>https://dysta.github.io/tags/sport/</guid>
       <description></description>
     </item>
     <item>
-      <title>GitHub</title>
-      <link>https://dysta.github.io/tags/github/</link>
+      <title>Tech</title>
+      <link>https://dysta.github.io/tags/tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/github/</guid>
+      <guid>https://dysta.github.io/tags/tech/</guid>
       <description></description>
     </item>
     <item>
-      <title>Gorm</title>
-      <link>https://dysta.github.io/tags/gorm/</link>
+      <title>Voyage</title>
+      <link>https://dysta.github.io/tags/voyage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/gorm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Jira</title>
-      <link>https://dysta.github.io/tags/jira/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/jira/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MariaDB</title>
-      <link>https://dysta.github.io/tags/mariadb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/mariadb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MongoDB</title>
-      <link>https://dysta.github.io/tags/mongodb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/mongodb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OpenCV</title>
-      <link>https://dysta.github.io/tags/opencv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/opencv/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OpenMP</title>
-      <link>https://dysta.github.io/tags/openmp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/openmp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Poetry</title>
-      <link>https://dysta.github.io/tags/poetry/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/poetry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PostgreSQL</title>
-      <link>https://dysta.github.io/tags/postgresql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/postgresql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PyUnit</title>
-      <link>https://dysta.github.io/tags/pyunit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/pyunit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Qt</title>
-      <link>https://dysta.github.io/tags/qt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dysta.github.io/tags/qt/</guid>
+      <guid>https://dysta.github.io/tags/voyage/</guid>
       <description></description>
     </item>
   </channel>
