@@ -3,26 +3,47 @@ title: "Curriculum Vitae"
 layout: "cv"
 url: "/cv/"
 summary: "cv"
+params:
+    competences:
+        back:
+            - Python
+            - Golang
+            - NodeJS
+            - Java
+            - PHP
+            - PostgreSQL
+            - MongoDB
+            - MariaDB
+        front:
+            - HTML
+            - CSS
+            - JS
+            - React
+            - VueJS
+        devops:
+            - Docker
+            - Git
+            - GitHub Actions
+            - AWS
+            - CI - CD
+        others:
+            - Agile SCRUM
+            - RUN
+            - Débuggage
+            - TU
+            - TI
+
 # competences mais pas réussi a rewrite le param
 tags:
-    - Développement agile
-    - Jira
-    - Git
-    - GitHub
-    - Débuggage
-    - MariaDB
-    - PostgreSQL
-    - MongoDB
-    - PyUnit
-    - Poetry
-    - Asyncio
-    - BeautifulSoup
-    - Discord.py
-    - Gorm
-    - OpenCV
-    - OpenMP
-    - Qt
-    - Docker
+    - Voyage
+    - Sport
+    - Escalade
+    - Jeux vidéo
+    - Manga
+    - Animé
+    - Tech
+    - Homelab
+    - Selfhost
 ---
 # Expériences Professionnelles
 ___
@@ -45,6 +66,7 @@ ___
 #### Stagiaire développeur Python/Cython/C++ -- Avril 2021 → Aout 2021
 - Développement d'une API en Python/Cython pour étendre les fonctionnalités d'Avizo-Amira, permettant aux utilisateurs d'automatiser leurs workflows scientifiques
 - Migration de fonctionnalités de C++ vers Python
+- Refonte du système de tests d’Avizo-Amira en Python pour remplacer TCL et permettre l’implémentation de traitements multithreadés.
 
 # Scolarité
 ___
@@ -62,18 +84,4 @@ ___
 
 
 # Compétences
-
-### Programmation
-| Langage     | Niveau |
-| :---------- | :-----: |
-| Python3     |  ⚪️⚪️⚪️⚪️⚫️ |
-| HTML/CSS/JS |  ⚪️⚪️⚪️⚪️⚫️ |
-| Go          |  ⚪️⚪️⚪️⚫️⚫️ |
-| Java 8      |  ⚪️⚪️⚪️⚫️⚫️ |
-| PHP         |  ⚪️⚪️⚪️⚫️⚫️ |
-| C           |  ⚪️⚪️⚪️⚫️⚫️ |
-| NodeJS      |  ⚪️⚪️⚫️⚫️⚫️ |
-
-### Autres
-
-
+___

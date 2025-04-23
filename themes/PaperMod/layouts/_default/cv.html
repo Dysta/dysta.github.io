@@ -15,8 +15,52 @@
   </div>
   {{- end }}
 
-  
+  {{- if .Params.competences.back }}
+  <h3>Back-end</h3>
+  <ul class="terms-tags">
+    {{- range ($.Params.competences.back) }}
+    <li>
+        <a>{{ . }}</a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  {{- if .Params.competences.front }}
+  <h3>Front-end</h3>
+  <ul class="terms-tags">
+    {{- range ($.Params.competences.front) }}
+    <li>
+        <a>{{ . }}</a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  {{- if .Params.competences.devops }}
+  <h3>Devops</h3>
+  <ul class="terms-tags">
+    {{- range ($.Params.competences.devops) }}
+    <li>
+        <a>{{ . }}</a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  {{- if .Params.competences.others }}
+  <h3>Autres</h3>
+  <ul class="terms-tags">
+    {{- range ($.Params.competences.others) }}
+    <li>
+        <a>{{ . }}</a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
   {{- if .Params.tags }}
+  <h1>Intérêts</h1>
   <ul class="terms-tags">
     {{- range ($.GetTerms "tags") }}
     <li>
