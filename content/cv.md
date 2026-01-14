@@ -22,8 +22,10 @@ params:
             - VueJS
         devops:
             - Docker
+            - Docker Compose
             - Git
             - GitHub Actions
+            - GitLab Actions
             - AWS
             - CI - CD
         others:
@@ -32,6 +34,8 @@ params:
             - Débuggage
             - TU
             - TI
+            - Management
+            - Formation
 
 # competences mais pas réussi a rewrite le param
 tags:
@@ -47,6 +51,11 @@ tags:
 ---
 # Expériences Professionnelles
 ___
+### &bull; Sopra Steria Group, Paris, France
+#### Tech Lead Python -- Mars 2025 → Maintenant
+- Maintenance évolutive et corrective, livraison applicative et suivi des mises en production pour un client du secteur public
+- Mise en place et standardisation de l’écosystème technique (outillage, bonnes pratiques, environnements, documentation)
+- Encadrement et formation de développeurs juniors (montée en compétences, bonnes pratiques, revue de code)
 
 ### &bull; Benebono, Paris, France
 #### Développeur Backend Go -- Mai 2023 → Janvier 2025
