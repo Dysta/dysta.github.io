@@ -8,10 +8,10 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Setup git
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -22,7 +22,7 @@ jobs:
           hugo-version: '0.143.1'
           # extended: true
 
-      - name: Build
+      - name: Build website
         run: hugo --minify
 
       - name: Deploy
