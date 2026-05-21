@@ -51,8 +51,13 @@ tags:
 ---
 # Expériences Professionnelles
 ___
+### &bull; Jimmy Energy, Paris, France
+#### Développeur Python Senior -- Avril 2026 → Maintenant
+- Maintenance évolutive et corrective, déploiement de mise à jour de la bibliothèque interne de rédaction de documents
+- Mise à jour de l'écosystème interne de CI/CD pour améliorer les performances
+
 ### &bull; Sopra Steria Group, Paris, France
-#### Tech Lead Python -- Mars 2025 → Maintenant
+#### Tech Lead Python -- Mars 2025 → Avril 2026
 - Maintenance évolutive et corrective, livraison applicative et suivi des mises en production pour un client du secteur public
 - Mise en place et standardisation de l’écosystème technique (outillage, bonnes pratiques, environnements, documentation)
 - Encadrement et formation de développeurs juniors (montée en compétences, bonnes pratiques, revue de code)
