@@ -124,5 +124,3 @@ Une API REST statique est une solution idéale pour :
 - Rendre des données accessibles en **quelques minutes**.  
 
 Si votre projet ne nécessite **ni requêtes dynamiques ni mises à jour en temps réel**, c'est une solution simple, scalable et efficace.  
-
-👉 Et vous, avez-vous déjà testé ce type d’API ? 🚀  
