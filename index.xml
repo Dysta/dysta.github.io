@@ -6,8 +6,18 @@
     <description>Recent content on Dysta&#39;s Lair</description>
     <generator>Hugo -- 0.143.1</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 30 Mar 2025 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 12:00:00 +0100</lastBuildDate>
     <atom:link href="https://dysta.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git &#43; JSON &#43; worktree = petite base de données partagée</title>
+      <link>https://dysta.github.io/posts/git-worktree-database-and-sun/</link>
+      <pubDate>Tue, 26 May 2026 12:00:00 +0100</pubDate>
+      <guid>https://dysta.github.io/posts/git-worktree-database-and-sun/</guid>
+      <description>&lt;h1 id=&#34;du-stockage-simple-sans-frais-et-sans-maintenance&#34;&gt;Du stockage simple, sans frais et sans maintenance&lt;/h1&gt;
+&lt;p&gt;Cela fait un an depuis le dernier post où je vous présentais un petit hack GitHub pour avoir une API sans payer. Je vous avais fièrement présenté mon idée et les retours avaient été plutôt positifs. Devinez quoi ? Aujourd&amp;rsquo;hui, on remet ça !&lt;/p&gt;
+&lt;h2 id=&#34;contexte&#34;&gt;Contexte&lt;/h2&gt;
+&lt;p&gt;Dans mon travail actuel, nous écrivons des documents référencés. Une référence est définie par un code unique issu d&amp;rsquo;une combinaison de trois éléments :&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Une API REST statique gratuitement</title>
       <link>https://dysta.github.io/posts/serverless-rest-api/</link>
