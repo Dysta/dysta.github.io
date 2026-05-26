@@ -3,32 +3,27 @@ title:  "Une API REST statique gratuitement"
 date:   2025-03-30T12:00:00+01:00
 categories: "dev"
 ---
-# Une API REST statique : définition, cas d’usage et mise en place  
-
-Aujourd’hui, je vais vous présenter une façon simple et gratuite de concevoir une API REST statique, hébergée via un simple repository GitHub.
-
-___
+# Une API REST statique : définition, cas d’usage et mise en place
+Bonjour à tous, aujourd’hui, je vais vous présenter une façon simple et gratuite de concevoir une API REST statique, hébergée via un simple repository GitHub.
 
 ## Qu'est-ce qu'une API REST statique ?  
-
 Je définis une API REST statique comme une API qui respecte trois principes fondamentaux :  
 
 - **Serverless** : elle ne dépend d’aucun cloud provider (AWS, GCP, Azure, etc..).  
 - **Stateless** : elle ne conserve aucun état entre les requêtes.  
 - **Scalable** : elle peut être mise à l’échelle facilement, sans contrainte d’infrastructure.  
 
-En pratique, il s'agit d'une API qui expose des données sous forme de fichiers JSON statiques, accessibles via des requêtes HTTP, sans traitement côté serveur. Autrement dit, elle est **entièrement en lecture seule**.  
+En pratique, il s'agit d'une API qui expose des données sous forme de fichiers JSON statiques, accessibles via des requêtes HTTPS, sans traitement côté serveur. Autrement dit, elle est **entièrement en lecture seule**.
 
-## Un cas concret : l’open data de l’Assemblée nationale  
+___
 
-Mon objectif était de rendre accessibles des informations sur les députés : leurs votes, leur présence et les amendements adoptés ou non. Le tout dans un format réutilisable pour divers projets : bots, sites web, applications mobiles…  
+# Un cas concret : l’open data de l’Assemblée nationale  
+Mon objectif était de rendre accessibles des informations sur les députés : leurs votes, leur présence dans l'hémicycle et les amendements adoptés ou non. Le tout dans un format réutilisable pour divers projets : bots, sites web, applications mobiles…  
 
 ### Récupération des données  
-
-Le format JSON étant le plus adapté, il était évident que mes données seraient sauvegardées sous cette forme. Pour les obtenir, j'ai écrit un script en **Python**, utilisant la bibliothèque [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) pour scraper et parser le site de l’Assemblée nationale.  
+Le format JSON étant le plus adapté, il était évident que mes données seraient sauvegardées sous cette forme. Pour les obtenir, j'ai écrit un script en **Python**, utilisant la bibliothèque [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) pour scraper et parser le site de l’Assemblée nationale.
 
 ### Rendre les données accessibles  
-
 JSON étant omniprésent dans le développement web, une **API REST** était la solution la plus naturelle pour exposer ces données. Mais héberger une API implique généralement :  
 
 - Un **serveur backend** pour traiter les requêtes,  
@@ -38,13 +33,11 @@ JSON étant omniprésent dans le développement web, une **API REST** était la 
 Tout cela a un **coût** en temps et en argent… alors j’ai cherché une solution **gratuite et sans serveur**.  
 
 ## Solution mise en place  
-
 L'idée m'est venue en explorant mon repository GitHub : son arborescence ressemblait étrangement à une API ! Et GitHub propose une fonctionnalité clé : le bouton **"View raw"**, qui permet d’accéder directement au contenu brut des fichiers via une URL.  
 
 J’ai donc remplacé **le backend et le bucket** par un simple repository GitHub en me reposant sur ce principe.  
 
 ### Architecture finale  
-
 1. **Scraping et parsing** : un script récupère les données publiques de l’Assemblée nationale.  
 2. **Génération de fichiers JSON** : les données sont transformées et classées dans les bons dossiers.  
 3. **Hébergement sur GitHub** : les fichiers sont accessibles via un lien brut.  
@@ -52,7 +45,6 @@ J’ai donc remplacé **le backend et le bucket** par un simple repository GitHu
 Cette approche me permet de fournir des données **gratuitement**, sans aucune complexité technique ni infrastructure coûteuse.  
 
 ## Pourquoi ce choix ?  
-
 Ce modèle présente plusieurs **avantages majeurs** :  
 
 - **Simplicité** : pas de backend, pas de base de données, pas de gestion de serveur.  
@@ -63,7 +55,6 @@ Ce modèle présente plusieurs **avantages majeurs** :
 ## Automatisation des mises à jour  
 
 ### Le problème  
-
 À ce stade, je devais encore **mettre à jour les fichiers manuellement** :  
 
 - **Lancer** le script sur mon ordinateur,  
@@ -124,3 +115,5 @@ Une API REST statique est une solution idéale pour :
 - Rendre des données accessibles en **quelques minutes**.  
 
 Si votre projet ne nécessite **ni requêtes dynamiques ni mises à jour en temps réel**, c'est une solution simple, scalable et efficace.  
+
+J'espère que ça vous donnera des idées 😊
