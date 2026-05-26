@@ -15,6 +15,7 @@
       <guid>https://dysta.github.io/posts/git-worktree-database-and-sun/</guid>
       <description>&lt;h1 id=&#34;du-stockage-simple-sans-frais-et-sans-maintenance&#34;&gt;Du stockage simple, sans frais et sans maintenance&lt;/h1&gt;
 &lt;p&gt;Cela fait un an depuis le dernier post où je vous présentais un petit hack GitHub pour avoir une API sans payer. Je vous avais fièrement présenté mon idée et les retours avaient été plutôt positifs. Devinez quoi ? Aujourd&amp;rsquo;hui, on remet ça !&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;contexte&#34;&gt;Contexte&lt;/h2&gt;
 &lt;p&gt;Dans mon travail actuel, nous écrivons des documents référencés. Une référence est définie par un code unique issu d&amp;rsquo;une combinaison de trois éléments :&lt;/p&gt;</description>
     </item>
