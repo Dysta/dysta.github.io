@@ -146,12 +146,7 @@ Je me mets donc à transformer mon workflow autour d'un context manager.
 ```py
 @contextmanager
 def get_registry(branch: str, filename: str):
-    exist = git("fetch", "origin", branch) == 0
-    if not exist:
-        raise RuntimeError(
-            f"Can't find branch origin/{branch}.",
-            file=sys.stderr,
-        )
+    assert git("fetch", "origin", branch, cwd=root) == 0, f"Can't find the branch origin/{branch}"
 
     tmp = Path(tempfile.mkdtemp(prefix="refs-worktree-"))
 
@@ -193,12 +188,7 @@ Je modifie donc le script :
 ```py
 @contextmanager
 def get_registry(branch: str, filename: str):
-    exist = git("fetch", "origin", branch) == 0
-    if not exist:
-        raise RuntimeError(
-            f"Can't find branch origin/{branch}.",
-            file=sys.stderr,
-        )
+    assert git("fetch", "origin", branch, cwd=root) == 0, f"Can't find the branch origin/{branch}"
 
     tmp = Path(tempfile.mkdtemp(prefix="refs-worktree-"))
 
