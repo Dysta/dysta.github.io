@@ -1,0 +1,142 @@
+{{ define "main" }}
+{{ $profile := site.Data.github }}
+<div class="github-home">
+  <header class="github-intro">
+    <img class="github-avatar"
+      src="{{ with $profile }}{{ .avatarUrl }}{{ else }}{{ site.Params.profileMode.imageUrl }}{{ end }}"
+      alt="Avatar de Dysta" width="200" height="200" fetchpriority="high">
+    <h1>{{ with $profile }}{{ .name | default .login }}{{ else }}Dysta{{ end }}</h1>
+    {{ with site.Params.profileMode.subtitle }}<div class="github-bio">{{ . | markdownify }}</div>{{ end }}
+    {{ with $profile.bio }}<p class="github-bio">{{ . }}</p>{{ end }}
+    {{ with $profile.organizations.nodes }}
+    {{ end }}
+    {{ with site.Params.socialIcons }}
+    {{ partial "social_icons.html" (dict "align" "center") }}
+    {{ end }}
+    {{ with site.Params.profileMode.buttons }}
+    <div class="github-buttons buttons">
+      {{ range . }}
+      <a class="button" href="{{ trim .url " " }}"><span class="button-inner">{{ .name }}</span></a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  {{ with $profile }}
+  <section class="github-stats" aria-label="Statistiques GitHub">
+    <div><strong>{{ .repositories.totalCount }}</strong><span>Dépôts</span></div>
+    {{ if isset . "totalStars" }}<div><strong>{{ .totalStars }}</strong><span>Étoiles</span></div>{{ end }}
+    <div><strong>{{ .followers.totalCount }}</strong><span>Abonnés</span></div>
+    <div><strong class="github-accent">{{ .contributionsCollection.contributionCalendar.totalContributions
+        }}</strong><span>Contributions</span></div>
+  </section>
+
+  {{ with .languages }}
+  <section class="github-section github-technologies" aria-labelledby="technologies-title">
+    <h2 id="technologies-title">Technologies</h2>
+    <div class="github-badges">
+      {{ range . }}<span class="github-badge"><i style="background-color: {{ .color | default " #888888" }}"></i>{{
+        .name }}</span>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="github-section" aria-labelledby="activity-title">
+    <div class="github-section-heading">
+      <h2 id="activity-title">Contributions</h2><span class="github-muted">Sur les 12 derniers mois</span>
+    </div>
+    {{ with .contributionsCollection.contributionCalendar }}
+    <p class="github-muted"><strong>{{ .totalContributions }}</strong> contributions sur GitHub</p>
+    <div class="github-calendar-scroll" tabindex="0" role="region"
+      aria-label="Calendrier des contributions, défilement horizontal">
+      <div class="github-calendar">
+        {{ range .weeks }}
+        <div class="github-week">
+          {{ range .contributionDays }}
+          <span class="github-day {{ .contributionLevel }}" style="grid-row: {{ add .weekday 1 }}" tabindex="0"
+            aria-label="{{ .date }} : {{ .contributionCount }} contributions"><span class="github-tooltip">{{ .date }} ·
+              {{ .contributionCount }} contributions</span></span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="github-legend" aria-label="Intensité croissante des contributions">Moins <i
+        class="github-day NONE"></i><i class="github-day FIRST_QUARTILE"></i><i
+        class="github-day SECOND_QUARTILE"></i><i class="github-day THIRD_QUARTILE"></i><i
+        class="github-day FOURTH_QUARTILE"></i> Plus</div>
+    {{ end }}
+  </section>
+
+  <section class="github-section" aria-labelledby="opensource-title">
+    <div class="github-section-heading">
+      <h2 id="opensource-title">Contributions open source</h2>
+      <span class="github-muted">Sur les 12 derniers mois</span>
+    </div>
+    {{ with .externalContributions }}
+    <div class="github-projects">
+      {{ range . }}
+      <a class="github-project post-entry" href="{{ .url }}" target="_blank">
+        <div class="github-project-copy">
+          <h3>{{ .name }}</h3>
+        </div>
+        <div class="github-project-meta entry-footer">
+          {{ if .pullRequests }}<span>{{ .pullRequests }} pull requests ouvertes</span>{{ end }}
+          {{ if .commits }}<span>{{ .commits }} commits</span>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="github-muted">Aucune contribution publique à un dépôt externe sur cette période.</p>
+    {{ end }}
+  </section>
+
+  {{ with .pinnedItems.nodes }}
+  <section class="github-section" aria-labelledby="projects-title">
+    <div class="github-section-heading">
+      <h2 id="projects-title">Projets à la une</h2>
+      <select id="github-sort" aria-label="Trier les projets">
+        <option value="stars">Plus d’étoiles</option>
+        <option value="pinned">Ordre épinglé</option>
+      </select>
+    </div>
+    <div class="github-projects" id="github-featured-projects">
+      {{ range $index, $repo := sort . "stargazerCount" "desc" }}
+      {{ $order := 0 }}{{ range $position, $pinned := $.Site.Data.github.pinnedItems.nodes }}{{ if eq $pinned.url
+      $repo.url }}{{ $order = $position }}{{ end }}{{ end }}
+      <a class="github-project post-entry" href="{{ .url }}" data-stars="{{ .stargazerCount }}" target="_blank"
+        data-pinned="{{ $order }}" {{ if ge $index 6 }}hidden{{ end }}>
+        <div class="github-project-copy">
+          <h3>{{ .name }}</h3>{{ with .description }}<p>{{ . }}</p>{{ end }}
+        </div>
+        <div class="github-project-meta entry-footer">{{ with .primaryLanguage }}<span><i
+              style="background-color: {{ .color | default " #888888" }}"></i>{{ .name }}</span>{{ end }}<span
+            aria-label="{{ .stargazerCount }} étoiles">★ {{ .stargazerCount }}</span></div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  <script>
+    document.getElementById('github-sort').addEventListener('change', function () {
+      const list = document.getElementById('github-featured-projects');
+      const key = this.value;
+      const projects = Array.from(list.children).sort((a, b) => key === 'stars'
+        ? Number(b.dataset.stars) - Number(a.dataset.stars)
+        : Number(a.dataset.pinned) - Number(b.dataset.pinned));
+      projects.forEach((project, index) => {
+        project.hidden = index >= 6;
+        list.appendChild(project);
+      });
+    });
+  </script>
+  {{ end }}
+  {{ else }}
+  <p class="github-empty">Retrouvez mes projets et mes contributions sur GitHub.</p>
+  {{ end }}
+
+  <footer class="github-profile-footer">
+    {{ with $profile.createdAt }}<p>Sur GitHub depuis {{ (time.AsTime .).Format "2006" }}</p>{{ end }}
+  </footer>
+</div>
+{{ end }}

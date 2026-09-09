@@ -1,3 +1,5 @@
 .hugo_build.lock
+/data/github.json
+__pycache__/
 
 public/**

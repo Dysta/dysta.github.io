@@ -5,10 +5,15 @@ on:
     branches:
       - main  # Set a branch to deploy
   pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * *'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Setup git
         uses: actions/checkout@v6
@@ -22,12 +27,17 @@ jobs:
           hugo-version: '0.143.1'
           # extended: true
 
+      - name: Fetch public GitHub profile
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/fetch-github.py
+
       - name: Build website
         run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
