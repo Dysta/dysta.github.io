@@ -134,9 +134,5 @@
   {{ else }}
   <p class="github-empty">Retrouvez mes projets et mes contributions sur GitHub.</p>
   {{ end }}
-
-  <footer class="github-profile-footer">
-    {{ with $profile.createdAt }}<p>Sur GitHub depuis {{ (time.AsTime .).Format "2006" }}</p>{{ end }}
-  </footer>
 </div>
 {{ end }}
