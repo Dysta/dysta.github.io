@@ -1,4 +1,4 @@
-languageCode: fr-fr
+locale: fr-fr
 baseURL: https://dysta.github.io/
 title: Dysta's Lair
 theme: "PaperMod"
