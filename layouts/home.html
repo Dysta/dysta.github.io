@@ -2,23 +2,24 @@
 {{ $profile := hugo.Data.github }}
 <div class="github-home">
   <header class="github-intro">
-    <img class="github-avatar"
-      src="{{ with $profile }}{{ .avatarUrl }}{{ else }}{{ site.Params.profileMode.imageUrl }}{{ end }}"
-      alt="Avatar de Dysta" width="200" height="200" fetchpriority="high">
-    <h1>{{ with $profile }}{{ .name | default .login }}{{ else }}Dysta{{ end }}</h1>
-    {{ with site.Params.profileMode.subtitle }}<div class="github-bio">{{ . | markdownify }}</div>{{ end }}
+    {{- with site.Params.profileMode }}
+    <img class="github-avatar" src="{{ .imageUrl }}" alt="{{ .imageTitle }}" width="{{ .imageWidth }}"
+      height="{{ .imageHeight }}" fetchpriority="high">
+    <h1>{{ .title }}</h1>
+    {{ with .subtitle }}<div class="github-bio">{{ . | markdownify }}</div>{{ end }}
     {{ with $profile.bio }}<p class="github-bio">{{ . }}</p>{{ end }}
     {{ with $profile.organizations.nodes }}
     {{ end }}
     {{ with site.Params.socialIcons }}
     {{ partial "social_icons.html" (dict "align" "center") }}
     {{ end }}
-    {{ with site.Params.profileMode.buttons }}
+    {{ with .buttons }}
     <div class="github-buttons buttons">
       {{ range . }}
       <a class="button" href="{{ trim .url " " }}"><span class="button-inner">{{ .name }}</span></a>
       {{ end }}
     </div>
+    {{ end }}
     {{ end }}
   </header>
 
