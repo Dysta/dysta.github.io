@@ -6,103 +6,103 @@ theme: "PaperMod"
 enableEmoji: true
 
 minify:
-    disableXML: true
-    minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Dysta's Lair
-    description: "Dysta's personnal blog."
-    keywords: [Blog, Portfolio, PaperMod]
-    author: Dysta
-    discordInvitCode: "3u3HyEsMah"
-    # author: ["Me", "You"] # multiple authors
-    DateFormat: "January 2, 2006"
-    defaultTheme: auto # dark, light, auto
-    disableThemeToggle: false
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Dysta's Lair
+  description: "Dysta's personnal blog."
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Dysta
+  discordInvitCode: "3u3HyEsMah"
+  # author: ["Me", "You"] # multiple authors
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light, auto
+  disableThemeToggle: false
 
-    ShowReadingTime: true
-    ShowShareButtons: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
-    disableSpecial1stPost: false
-    disableScrollToTop: false
-    comments: false
-    hidemeta: false
-    hideSummary: false
-    showtoc: true
-    tocopen: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
 
-    # home-info mode
-    homeInfoParams:
-        Title: "Salut \U0001F44B"
-        Content: "Je suis passionné d'informatique depuis plusieurs années.\n\n
+  # home-info mode
+  homeInfoParams:
+    Title: "Salut \U0001F44B"
+    Content: "Je suis passionné d'informatique depuis plusieurs années.\n\n
 
-                    Je suis développeur logiciel, diplomé d'un **master**.\n\n
+      Je suis développeur logiciel, diplomé d'un **master**.\n\n
 
-                    Ce que vous trouverez ici ? Un peu de tout : mon CV, des articles sur des techno, ou encore des projets que je suis actuellement en train de mettre en place. En bref, vous êtes dans mon espace personnel ! 😎\n\n
-                "
+      Ce que vous trouverez ici ? Un peu de tout : mon CV, des articles sur des techno, ou encore des projets que je suis actuellement en train de mettre en place. En bref, vous êtes dans mon espace personnel ! 😎\n\n
+      "
 
-    profileMode:
-        enabled: true
-        title: "Dysta" # optional default will be site title
-        subtitle: "🐍 Python • 🌀 Go • 💻 Projects • 🏡 Life"
-        imageUrl: "https://avatars.githubusercontent.com/u/25008828" # optional
-        imageTitle: "Dysta's avatar" # optional
-        imageWidth: 200 # custom size
-        imageHeight: 200 # custom size
-        buttons:
-            - name: Blog
-              url: "/posts"
+  profileMode:
+    enabled: true
+    title: "Dysta" # optional default will be site title
+    subtitle: "🐍 Python • 🌀 Go • 💻 Projects • 🏡 Life"
+    imageUrl: "https://avatars.githubusercontent.com/u/25008828" # optional
+    imageTitle: "Dysta's avatar" # optional
+    imageWidth: 200 # custom size
+    imageHeight: 200 # custom size
+    buttons:
+      - name: Blog
+        url: "/posts"
 
-    socialIcons:
-        - name: github
-          url: "https://github.com/Dysta"
-        - name: kofi
-          url: "https://ko-fi.com/dysta"
-        - name: discord
-          url: "https://discord.com/users/845189167914549288"
+  socialIcons:
+    - name: github
+      url: "https://github.com/Dysta"
+    - name: kofi
+      url: "https://ko-fi.com/dysta"
+    - name: discord
+      url: "https://discord.com/users/845189167914549288"
 
-    fuseOpts:
-        isCaseSensitive: false
-        shouldSort: true
-        location: 0
-        distance: 1000
-        threshold: 0.4
-        minMatchCharLength: 0
-        keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 menu:
-    main:
-        - identifier: search
-          name: Search
-          url: /search/
-          weight: 10
-        - identifier: blog
-          name: Blog
-          url: /posts/
-          weight: 20
-        - identifier: archives
-          name: Archives
-          url: /archives/
-          weight: 30
-        - identifier: categories
-          name: Categories
-          url: /categories/
-          weight: 40
-        - identifier: CV
-          name: Curriculum Vitae
-          url: /cv/
-          weight: 50
-        - identifier: Discord
-          name: Discord
-          url: /discord/
-          weight: 60
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 40
+    - identifier: CV
+      name: Curriculum Vitae
+      url: /cv/
+      weight: 50
+    - identifier: Discord
+      name: Discord
+      url: /discord/
+      weight: 60
 
 # search
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary

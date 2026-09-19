@@ -9,8 +9,6 @@
 }
 
 .github-avatar {
-  width: 200px;
-  height: 200px;
   border: 4px solid var(--border);
   border-radius: 50%;
   margin: 0 auto 24px;
