@@ -4,20 +4,14 @@ date:   2025-04-05T12:00:00+01:00
 categories: "dev"
 draft: true
 ---
-Arriver sur un nouveau projet implique presque toujours la même étape critique : 
-le setup de l’environnement de développement.
+Pour la production on a Docker, mais pour le développement on a quoi ?
 
-En théorie, Docker est censé régler le problème.
-En pratique, on se retrouve souvent avec :
-- plusieurs versions de Node/Python à installer localement,
-- des services qui tournent en double sur la machine,
-- des `.env` non versionnés et différents selon les devs,
-- et un debug à base de `print()` dans un monolithe trop gros.
+Cette question je me la pose à chaque fois que je veux configurer un nouveau projet. Et à chaque fois c'est le même constat, on conseil de lancer le docker-compose utilisé en production en injectant un fichier .env partagé entre dev depuis un bon moment déjà.
 
-Résultat : onboarding lent, environnements incohérents, et le classique “chez moi ça marche”.
+Cette approche a du bon : on a une usine à gaz fonctionnelle en une seule ligne de commande. Par contre, on perd les différents avantages que propose les IDE modernes comme le débuggeur intégré, le hot reloading pour certain langages et une certaines uniformité dans les conventions de codes du projet.
+
 
 ## Le problème avec Docker Compose en local
-
 Docker Compose règle le problème des dépendances applicatives, mais **pas celui de l’environnement de développement**.
 
 Dans la majorité des projets :
@@ -28,7 +22,6 @@ Dans la majorité des projets :
 On déplace le problème, on ne le supprime pas.
 
 ## Dev Containers : comment ça fonctionne réellement
-
 Un Dev Container est une couche au-dessus de Docker :
 - VS Code se connecte à un conteneur
 - l’éditeur, le terminal, le debugger et les extensions s’exécutent **dans ce conteneur**
